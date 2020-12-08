@@ -15,7 +15,7 @@ int main()
     {
         cout << "------System na spravu kníh------" << endl;
         cout << "---------------Menu--------------" << endl;
-        cout << "Vekova kategoria : " << endl;
+        cout << "Veková kategoria : " << endl;
         cout << "Deti - Deti" << endl;
         cout << "Stud - Študenti" << endl;
         cout << "Dosp - Dospeli" << endl;
