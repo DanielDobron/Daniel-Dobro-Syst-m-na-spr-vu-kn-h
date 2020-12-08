@@ -110,7 +110,7 @@ int main()
                 else cout << "Toto nie je Žanre !" << endl;
              }
             
-
+            cout << "jebo" << end;
        
             else
             {
