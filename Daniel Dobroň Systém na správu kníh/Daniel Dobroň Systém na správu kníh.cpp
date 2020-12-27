@@ -14,8 +14,8 @@ int  choice;
 int main()
 {  
         std::setlocale(LC_ALL, "");
-        cout << "------Systém na správu kníh------" << endl;
-        cout << "---------------Menu--------------" << endl;
+        cout << "---------------------Systém na správu kníh-------------------" << endl;
+        cout << "----------------------------Menu-----------------------------" << endl;
         cout << "Veková kategória : " << endl;
         cout << "Deti - Deti" << endl;
         cout << "Stud - Študenti" << endl;
