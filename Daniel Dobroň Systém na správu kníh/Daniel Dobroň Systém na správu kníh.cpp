@@ -1,6 +1,4 @@
-﻿// Daniel Dobroň Systém na správu kníh.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-#include <iostream>
+﻿#include <iostream>
 #include <clocale>  
 using namespace std;
 void Ciara()
@@ -13,113 +11,113 @@ int main()
     string vyber, dalej;
     while (true)
     {
-        cout << "------System na spravu kníh------" << endl;
+        cout << "------Systém na správu kníh------" << endl;
         cout << "---------------Menu--------------" << endl;
-        cout << "Veková kategoria : " << endl;
+        cout << "Veková kategória : " << endl;
         cout << "Deti - Deti" << endl;
         cout << "Stud - Študenti" << endl;
-        cout << "Dosp - Dospeli" << endl;
-        cout << "Pre deti (zaner) : Omalovanky, Rozprávky " << endl;
-        cout << "Pre studentov (zaner) : Romany, Detektivky, Cestopisy" << endl;
-        cout << "Pre dospelych (zaner) : Romany, Novely, Kuchárky" << endl;
+        cout << "Dosp - Dospelí" << endl;
+        cout << "Pre Deti (žáner) : Omaľovánky, Rozprávky " << endl;
+        cout << "Pre Študentov (žáner) : Romány, Detektívky, Cestopisy" << endl;
+        cout << "Pre Dospelých (žáner) : Romány, Novely, Kuchárky" << endl;
         Ciara();
 
         while (true)
         {
-            cout << "Vyber vekovú kategoriu :" << endl;
+            cout << "Vyber vekovú kategóriu :" << endl;
             cin >> vyber;
             cout << endl << endl;
-            
+
             if (vyber == "Deti")
             {
                 cout << "-----------------------------Menu:Deti-----------------------" << endl;
                 cout << "Žánre:" << endl;
-                cout << "Omalovanky" << endl;
-                cout << "Rozpravky" << endl;
+                cout << "O - Omaľovánky" << endl;
+                cout << "R - Rozprávky" << endl;
                 Ciara();
                 cin >> vyber;
 
-                if (vyber == "Omalovanky")
+                if (vyber == "O")
                 {
-                   cout << "Nazov: Velka kniha omalovanok ; Vydavatelstvo : Foni book, 2006; Cena: 3.30 eur" << endl;
-                   cout << "       Pocet stran- 198 , Pevna vazba, Strucny dej: Vyfarbi, uc sa, raduj sa! " << endl;
-                   cout << " " << endl;
-                   cout << " " << endl;
-                   cout << " " << endl;
-                   cout << " " << endl;
-                   cout << " " << endl;
+                    cout << "Názov: Veľká kniha omaľovánok ; Vydavateľstvo : Foni book, 2006; Cena: 3.30 eur" << endl;
+                    cout << "       Počet stran- 198 , Pevná väzba, Stručný dej: Vyfarbi, uč sa, raduj sa! " << endl;
+                    cout << " " << endl;
+                    cout << " " << endl;
+                    cout << " " << endl;
+                    cout << " " << endl;
+                    cout << " " << endl;
 
 
                 }
-                else if (vyber == "Rozpravky")
+                else if (vyber == "R")
                 {
                     cout << "Bala Poto fvjhjgh" << endl;
                 }
-                else cout << "Toto nie je Žanre !" << endl;
+                else cout << "Toto nie je v Žánroch!" << endl;
 
             }
-             else if (vyber == "Stud")
-             {
+            else if (vyber == "Stud")
+            {
                 cout << "---------------------------Menu:Študenti--------------------" << endl;
                 cout << "Žanre : " << endl;
-                cout << "Romány" << endl;
-                cout << "Detektivky" << endl;
-                cout << "Cestopisy" << endl;
+                cout << "R - Romány" << endl;
+                cout << "D - Detektivky" << endl;
+                cout << "C - Cestopisy" << endl;
                 Ciara();
                 cin >> vyber;
 
-                if (vyber == "Romany")
+                if (vyber == "R")
                 {
                     cout << "Pavol Bela Jozko debilko " << endl;
 
                 }
-                else if (vyber == "Detektivky")
+                else if (vyber == "D")
                 {
-                    cout << "Bala Poto fvjhjgh" << endl;
+                    cout << "ratata fvjhjgh" << endl;
                 }
-                else if (vyber == "Cestopisy")
-                {
-                    cout << "mala rrtrd frdfdf" << endl;
-                }
-                else cout << "Toto nie je Žanre !" << endl;
-
-             }
-             else if (vyber == "Dosp")
-             {
-                cout << "---------------------------Menu:Dospeli--------------------" << endl;
-                cout << "Zanre : " << endl;
-                cout << "Romany" << endl;
-                cout << "Novely" << endl;
-                cout << "Kucharky" << endl;
-                Ciara();
-                cin >> vyber;
-
-                if (vyber == "Romany")
-                {
-                    cout << "Pavol Bela Jozko debilko " << endl;
-
-                }
-                else if (vyber == "Novely")
-                {
-                    cout << "Bala Poto fvjhjgh" << endl;
-                }
-                else if (vyber == "Kucharky")
+                else if (vyber == "C")
                 {
                     cout << "mala rrtrd frdfdf" << endl;
                 }
-                else cout << "Toto nie je Žanre !" << endl;
-             }
-            
-            
-       
-            else
+                else cout << "Toto nie je v Žánroch! !" << endl;
+
+            }
+            else if (vyber == "Dosp")
             {
-              Ciara();
-              cout << "Vekova kategoria: " << vyber << " Neexistuje !" << endl;
-              Ciara();
+                cout << "---------------------------Menu:Dospelí--------------------" << endl;
+                cout << "Žánre : " << endl;
+                cout << "R - Romány" << endl;
+                cout << "N - Novely" << endl;
+                cout << "K - Kuchárky" << endl;
+                Ciara();
+                cin >> vyber;
+
+                if (vyber == "R")
+                {
+                    cout << "Pavol Bela Jozko debilko " << endl;
+
+                }
+                else if (vyber == "N")
+                {
+                    cout << "Bala Poto fvjhjgh" << endl;
+                }
+                else if (vyber == "K")
+                {
+                    cout << "mala rrtrd frdfdf" << endl;
+                }
+                else cout << "Toto nie je v Žánroch!!" << endl;
             }
 
-            cout << "Chcete pokracovat v hladani knih? (a/n) " << endl;
+
+
+            else
+            {
+                Ciara();
+                cout << "Veková kategória: " << vyber << " Neexistuje !" << endl;
+                Ciara();
+            }
+
+            cout << "Chcete pokračovať v hľadaní kníh? (a/n) " << endl;
             cin >> dalej;
             if (dalej == "n") break;
 
@@ -127,9 +125,9 @@ int main()
 
 
         }
-        cout << "Urcite chcete ukoncit hladanie knih ? (a/n) " << endl;
+        cout << "Určite chcete ukončiť hľadanie kníh ? (a/n) " << endl;
         cin >> dalej;
         if (dalej == "a") break;
-        
+
     }
 }
