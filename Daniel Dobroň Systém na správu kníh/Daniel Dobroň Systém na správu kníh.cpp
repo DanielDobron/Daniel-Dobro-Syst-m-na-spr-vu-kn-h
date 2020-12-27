@@ -13,10 +13,7 @@ int  choice;
 
 int main()
 {  
-        
         std::setlocale(LC_ALL, "");
-    
-    
         cout << "------Systém na správu kníh------" << endl;
         cout << "---------------Menu--------------" << endl;
         cout << "Veková kategória : " << endl;
@@ -26,16 +23,9 @@ int main()
         cout << "Pre Deti (žáner) : Omaľovánky, Rozprávky " << endl;
         cout << "Pre Študentov (žáner) : Romány, Detektívky, Cestopisy" << endl;
         cout << "Pre Dospelých (žáner) : Romány, Novely, Kuchárky" << endl;
-        Ciara();
-        
-        Knihy();
-       
-    
+        Ciara();      
+        Knihy();   
         return 0;
-
-           
-
-    
 }
 void Knihy()
 {
