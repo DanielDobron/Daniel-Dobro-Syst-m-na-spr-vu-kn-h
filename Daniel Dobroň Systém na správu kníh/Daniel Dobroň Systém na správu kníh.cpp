@@ -19,7 +19,7 @@ string Zanre[3][3] = { {"Omaľovánky", "Rozprávky"}, {"Romány", "Detektívky"
 
 int main()
 {
-    std::setlocale(LC_ALL, "");
+    setlocale(LC_ALL, "");
 
     cout << "---------------------Systém na správu kníh-------------------" << endl;
     cout << "----------------------------Menu-----------------------------" << endl;
@@ -37,7 +37,7 @@ int main()
 void Knihy()
 {
 
-    std::setlocale(LC_ALL, "");
+    setlocale(LC_ALL, "");
 
     cout << "Vyber vekovú kategóriu :" << endl;
     cin >> vyber;
