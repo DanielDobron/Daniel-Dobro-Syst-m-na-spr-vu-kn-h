@@ -23,6 +23,9 @@ int main()
 
     cout << "---------------------Systém na správu kníh-------------------" << endl;
     cout << "----------------------------Menu-----------------------------" << endl;
+    cout << "Pre Deti (žáner) : Omaľovánky, Rozprávky " << endl;
+    cout << "Pre Študentov (žáner) : Romány, Detektívky, Cestopisy" << endl;
+    cout << "Pre Dospelých (žáner) : Romány, Novely, Kuchárky" << endl;
     for (int i = 0; i < sizeof(Kategorie) / sizeof(*Kategorie); ++i) //* - pointer
     {
         cout << i+1 << " " << Kategorie[i] << endl;
