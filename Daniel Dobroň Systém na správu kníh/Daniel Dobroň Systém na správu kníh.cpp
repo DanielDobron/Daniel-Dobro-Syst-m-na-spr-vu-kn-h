@@ -7,25 +7,29 @@ void Ciara()
     cout << "-------------------------------------------------------------" << endl;
 }
 void Knihy();
-string vyber, dalej, opakovat;
+string dalej, opakovat;
+int vyber;
 int  choice;
 
 
+
+
+string Kategorie[3] = { "Deti", "Študenti ", "Dospelí" };
+string Zanre[3][3] = { {"Omaľovánky", "Rozprávky"}, {"Romány", "Detektívky", "Cestopisy"}, {"Romány", "Novely", "Kuchárky"} };
+
 int main()
-{  
-        std::setlocale(LC_ALL, "");
-        cout << "---------------------Systém na správu kníh-------------------" << endl;
-        cout << "----------------------------Menu-----------------------------" << endl;
-        cout << "Veková kategória : " << endl;
-        cout << "Deti - Deti" << endl;
-        cout << "Stud - Študenti" << endl;
-        cout << "Dosp - Dospelí" << endl;
-        cout << "Pre Deti (žáner) : Omaľovánky, Rozprávky " << endl;
-        cout << "Pre Študentov (žáner) : Romány, Detektívky, Cestopisy" << endl;
-        cout << "Pre Dospelých (žáner) : Romány, Novely, Kuchárky" << endl;
-        Ciara();      
-        Knihy();   
-        return 0;
+{
+    std::setlocale(LC_ALL, "");
+
+    cout << "---------------------Systém na správu kníh-------------------" << endl;
+    cout << "----------------------------Menu-----------------------------" << endl;
+    for (int i = 0; i < sizeof(Kategorie) / sizeof(*Kategorie); ++i) //* - pointer
+    {
+        cout << i+1 << " " << Kategorie[i] << endl;
+    }
+    Ciara();
+    Knihy();
+    return 0;
 }
 void Knihy()
 {
@@ -36,17 +40,17 @@ void Knihy()
     cin >> vyber;
     cout << endl << endl;
 
-    if (vyber == "Deti")
+    if (vyber == 1)
     {
         system("cls");
         cout << "-----------------------------Menu:Deti-----------------------" << endl;
         cout << "Žánre:" << endl;
-        cout << "O - Omaľovánky" << endl;
-        cout << "R - Rozprávky" << endl;
+        cout << "1 - Omaľovánky" << endl;
+        cout << "2 - Rozprávky" << endl;
         Ciara();
         cin >> vyber;
 
-        if (vyber == "O")
+        if (vyber == 1)
         {
 
             cout << "Názov: Veľká kniha omaľovánok, pre popis stlačte- 1" << endl;
@@ -72,7 +76,7 @@ void Knihy()
                 break;
             }
         }
-        else if (vyber == "R")
+        else if (vyber == 2)
         {
             cout << "Bala Poto fvjhjghpre, popis stlačte- 1 " << endl;
             cout << " " << endl;
@@ -97,18 +101,18 @@ void Knihy()
         else cout << "Toto nie je v Žánroch!" << endl;
 
     }
-    else if (vyber == "Stud")
+    else if (vyber == 2)
     {
         system("cls");
         cout << "---------------------------Menu:Študenti--------------------" << endl;
         cout << "Žanre : " << endl;
-        cout << "R - Romány" << endl;
-        cout << "D - Detektivky" << endl;
-        cout << "C - Cestopisy" << endl;
+        cout << "1 - Romány" << endl;
+        cout << "2 - Detektivky" << endl;
+        cout << "3 - Cestopisy" << endl;
         Ciara();
         cin >> vyber;
 
-        if (vyber == "R")
+        if (vyber == 1)
         {
             cout << "Pavol Bela Jozko debilko " << endl;
             cout << " " << endl;
@@ -131,7 +135,7 @@ void Knihy()
             }
 
         }
-        else if (vyber == "D")
+        else if (vyber == 2)
         {
             cout << "ratata fvjhjgh" << endl;
             cout << " " << endl;
@@ -153,7 +157,7 @@ void Knihy()
                 break;
             }
         }
-        else if (vyber == "C")
+        else if (vyber == 3)
         {
             cout << "mala rrtrd frdfdf" << endl;
             cout << " " << endl;
@@ -178,18 +182,18 @@ void Knihy()
         else cout << "Toto nie je v Žánroch! !" << endl;
 
     }
-    else if (vyber == "Dosp")
+    else if (vyber == 3)
     {
         system("cls");
         cout << "---------------------------Menu:Dospelí--------------------" << endl;
         cout << "Žánre : " << endl;
-        cout << "R - Romány" << endl;
-        cout << "N - Novely" << endl;
-        cout << "K - Kuchárky" << endl;
+        cout << "1 - Romány" << endl;
+        cout << "2 - Novely" << endl;
+        cout << "3 - Kuchárky" << endl;
         Ciara();
         cin >> vyber;
 
-        if (vyber == "R")
+        if (vyber == 1)
         {
             cout << "Pavol Bela Jozko debilko " << endl;
             cout << " " << endl;
@@ -212,7 +216,7 @@ void Knihy()
             }
 
         }
-        else if (vyber == "N")
+        else if (vyber == 2)
         {
             cout << "Bala Poto fvjhjgh" << endl;
             cout << " " << endl;
@@ -234,7 +238,7 @@ void Knihy()
                 break;
             }
         }
-        else if (vyber == "K")
+        else if (vyber == 3)
         {
             cout << "mala rrtrd frdfdf" << endl;
             cout << " " << endl;
